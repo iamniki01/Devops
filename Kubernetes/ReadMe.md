@@ -1,18 +1,21 @@
 ## Kuberentes Architecture
 
+* **Basic Architecture**
 ```mermaid
 graph TD;
     Cluster --> Master-Node(Manages-cluster);
     Cluster --> Worker-Node(Run Application);
 ```
+* **Master-Node Architecture**
 
 ```mermaid
 graph TD;
-    Master-Node --> API Server(Kube-apiserver);
+    Master-Node --> API-Server(Kube-apiserver);
     Master-Node --> Distribute-Database(etcd);
     Master-Node --> Scheduler(kube-scheduler);
     Master-Node --> Control-Manager(Kube-controller-manager);
 ```
+* **Worker-Node Architecture**
 
 ```mermaid
 graph TD;
@@ -21,6 +24,7 @@ graph TD;
     Worker-Node --> Container-Runtime(RI-docker..etc);
     Worker-Node --> Pods(Multiple-pods-running-containers);
 ```
+* **Worker-Node archestrain architecture**
 
 ```mermaid
 graph TD;
