@@ -3,10 +3,11 @@
 ## Architecture
 
 ```mermaid
-    Docker Client-->Docker Daemon;
-    Docker Daemon-->Containers;
-    Docker Daemon-->Local Images;
-    Docker Daemon-->Image Registry;
+graph TD;
+   Docker-Client-->Docker-Daemon;
+   Docker-Daemon-->Containers;
+   Docker-Daemon-->Local_Images;
+   Docker-Daemon-->Image_Registry;
 ```
 
 ## Installation
