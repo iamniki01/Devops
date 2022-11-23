@@ -1,12 +1,12 @@
 ## Kuberentes Architecture
 
-```meramid
+```mermaid
 graph TD;
     Cluster --> Master-Node(Manages-cluster);
     Cluster --> Worker-Node(Run Application);
 ```
 
-```meramid
+```mermaid
 graph TD;
     Master-Node --> API Server(Kube-apiserver);
     Master-Node --> Distribute-Database(etcd);
@@ -14,7 +14,7 @@ graph TD;
     Master-Node --> Control-Manager(Kube-controller-manager);
 ```
 
-```meramid
+```mermaid
 graph TD;
     Worker-Node --> Node-Agent(Kubelet);
     Worker-Node --> Networking-Component(Kube-Proxy);
@@ -22,7 +22,7 @@ graph TD;
     Worker-Node --> Pods(Multiple-pods-running-containers);
 ```
 
-```meramid
+```mermaid
 graph TD;
     Worker-Node --> Pod1;
     Worker-Node --> Pod2;
@@ -46,7 +46,7 @@ Here is the blog for it. [Press here](https://nikhilgowda.pythonanywhere.com/blo
 
 ### Kuberenets Deployment architecture
 
-```meramid
+```mermaid
 graph TD;
     Deployment --> Replica-Set1;
     Deployment --> Replica-Set2;
