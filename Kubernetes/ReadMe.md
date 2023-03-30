@@ -3,8 +3,8 @@
 * **Basic Architecture**
 ```mermaid
 graph TD;
-    Cluster --> Master-Node(Manages-cluster);
-    Cluster --> Worker-Node(Run Application);
+    Cluster --> Master-Node;
+    Cluster --> Worker-Node;
 ```
 * **Master-Node Architecture**
 
